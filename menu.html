@@ -1,0 +1,119 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Menú | Mi Pastelería</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            Mi Pastelería
+        </div>
+
+        <nav>
+
+            <a href="index.html">Inicio</a>
+
+            <a href="nosotros.html">Nosotros</a>
+
+            <a href="menu.html">Menú</a>
+
+            <a href="personalizados.html">
+                Personalizados
+            </a>
+
+            <a href="contacto.html">
+                Contacto
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="seccion">
+
+            <h1>Menú</h1>
+
+            <p>
+                Elige una categoría
+            </p>
+
+
+            <!-- CATEGORÍAS -->
+
+            <div class="categorias">
+
+                <button onclick="mostrarProductos('pasteles')">
+                    Pasteles
+                </button>
+
+                <button onclick="mostrarProductos('cupcakes')">
+                    Cupcakes
+                </button>
+
+                <button onclick="mostrarProductos('galletas')">
+                    Galletas
+                </button>
+
+                <button onclick="mostrarProductos('postres')">
+                    Postres
+                </button>
+
+            </div>
+
+
+            <!-- PRODUCTOS -->
+
+            <div
+                id="productos"
+                class="productos">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Mi Pastelería
+        </p>
+
+    </footer>
+
+
+    <script src="js/menu.js"></script>
+
+
+    <script>
+
+        const sesion =
+            localStorage.getItem("sesionActiva");
+
+        if (sesion !== "true") {
+            window.location.href = "login.html";
+        }
+
+    </script>
+
+</body>
+
+</html>
+```

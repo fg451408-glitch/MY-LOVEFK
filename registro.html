@@ -1,0 +1,68 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crear cuenta | Mi Pastelería</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="login-body">
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <h1>Crear cuenta</h1>
+
+            <p>Regístrate para entrar a nuestra pastelería</p>
+
+            <form id="registroForm">
+
+                <label for="nuevoUsuario">
+                    Usuario
+                </label>
+
+                <input
+                    type="text"
+                    id="nuevoUsuario"
+                    placeholder="Crea un usuario"
+                    required
+                >
+
+                <label for="nuevoPassword">
+                    Contraseña
+                </label>
+
+                <input
+                    type="password"
+                    id="nuevoPassword"
+                    placeholder="Crea una contraseña"
+                    required
+                >
+
+                <button type="submit">
+                    Crear cuenta
+                </button>
+
+            </form>
+
+            <p class="registro-texto">
+                ¿Ya tienes una cuenta?
+                <a href="login.html">Iniciar sesión</a>
+            </p>
+
+            <p id="mensajeRegistro"></p>
+
+        </div>
+
+    </div>
+
+    <script src="js/login.js"></script>
+
+</body>
+</html>
+```

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Pastelería</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <header>
+
+        <div class="logo">
+            Mi Pastelería
+        </div>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="menu.html">Menú</a>
+            <a href="personalizados.html">Personalizados</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- SECCIÓN PRINCIPAL -->
+        <section class="hero">
+
+            <div>
+
+                <h1>
+                    Bienvenidos a Mi Pastelería
+                </h1>
+
+                <p>
+                    Endulzamos tus momentos especiales
+                    con pasteles hechos con amor.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECCIÓN DE SABORES -->
+        <section class="seccion">
+
+            <h2>
+                Nuestros sabores
+            </h2>
+
+            <p>
+                informacion :))
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -
+    <footer>
+
+        <p>
+            © 2026 Mi Pastelería
+        </p>
+
+    </footer>
+
+
+    <!-- COMPROBAR SESIÓN -->
+    <script>
+
+        const sesion = localStorage.getItem("sesionActiva");
+
+        if (sesion !== "true") {
+
+            window.location.href = "login.html";
+
+        }
+
+
+        // MENSAJE DE INICIO CORRECTO
+        const mensaje = sessionStorage.getItem("mensajeBienvenida");
+
+        if (mensaje) {
+
+            const caja = document.createElement("div");
+
+            caja.className = "mensaje-bienvenida";
+
+            caja.textContent = "✅ " + mensaje;
+
+            document.body.appendChild(caja);
+
+
+            // Mostrar mensaje
+            setTimeout(function () {
+
+                caja.classList.add("mostrar");
+
+            }, 100);
+
+
+            // Ocultar mensaje después de 3 segundos
+            setTimeout(function () {
+
+                caja.classList.remove("mostrar");
+
+                setTimeout(function () {
+
+                    caja.remove();
+
+                    sessionStorage.removeItem("mensajeBienvenida");
+
+                }, 400);
+
+            }, 3000);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
